@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>loft — statically-typed scripting language</title>
+  <meta name="description" content="loft is a statically-typed, expression-oriented language with first-class structs, vectors, and a store-based heap.">
+  <link rel="canonical" href="https://loft-lang.org/">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { font-size: 16px; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                   Helvetica, Arial, sans-serif;
+      background: #1a1a1a;
+      color: #e8e8e8;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1rem;
+    }
+    main { max-width: 640px; width: 100%; }
+    h1 {
+      font-family: "SF Mono", Menlo, Monaco, Consolas, "Liberation Mono",
+                   "Courier New", monospace;
+      font-size: 4rem;
+      font-weight: 600;
+      letter-spacing: -0.03em;
+      margin-bottom: 0.5rem;
+      color: #fff;
+    }
+    .tagline {
+      color: #999;
+      font-size: 1.1rem;
+      margin-bottom: 2.5rem;
+      max-width: 32rem;
+    }
+    h2 {
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #888;
+      margin: 2.5rem 0 0.75rem;
+    }
+    a { color: #7cc; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    pre, code {
+      font-family: "SF Mono", Menlo, Monaco, Consolas, "Liberation Mono",
+                   "Courier New", monospace;
+      font-size: 0.92rem;
+    }
+    pre {
+      background: #232323;
+      border: 1px solid #2e2e2e;
+      padding: 1rem 1.25rem;
+      border-radius: 6px;
+      overflow-x: auto;
+      color: #d8d8d8;
+    }
+    ul { list-style: none; }
+    li {
+      margin: 0.5rem 0;
+      color: #b8b8b8;
+    }
+    li::before {
+      content: "→  ";
+      color: #555;
+    }
+    li .desc {
+      color: #777;
+      font-size: 0.92rem;
+    }
+    footer {
+      margin-top: 3.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #2e2e2e;
+      color: #666;
+      font-size: 0.88rem;
+    }
+    footer a { color: #888; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>loft</h1>
+    <p class="tagline">
+      A statically-typed, expression-oriented scripting language with
+      first-class structs, vectors, and a store-based heap.  Runs as a
+      tree-walking interpreter or compiles to native binaries.
+    </p>
+
+    <h2>Get loft</h2>
+    <pre><code>git clone https://github.com/jjstwerff/loft.git
+cd loft
+cargo build --release
+./target/release/loft myprogram.loft</code></pre>
+
+    <h2>Project</h2>
+    <ul>
+      <li>
+        <a href="https://github.com/jjstwerff/loft">github.com/jjstwerff/loft</a>
+        — <span class="desc">interpreter, compiler, source</span>
+      </li>
+      <li>
+        <a href="https://github.com/loft-lang/registry">github.com/loft-lang/registry</a>
+        — <span class="desc">package registry</span>
+      </li>
+      <li>
+        <a href="https://github.com/loft-lang/loft-libs-core">github.com/loft-lang/loft-libs-core</a>
+        — <span class="desc">core utility libraries (crypto, arguments, random)</span>
+      </li>
+      <li>
+        <a href="https://github.com/loft-lang">github.com/loft-lang</a>
+        — <span class="desc">ecosystem organisation</span>
+      </li>
+    </ul>
+
+    <footer>
+      LGPL-3.0-or-later
+      &middot;
+      <a href="https://github.com/loft-lang">loft-lang</a>
+    </footer>
+  </main>
+</body>
+</html>
